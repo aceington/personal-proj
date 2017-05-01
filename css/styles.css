@@ -14,17 +14,18 @@
   width: 220px;
   position: relative;
   top: 160px;
-  left: 41.5%;
+  left: 50%;
+  margin-left: -110px;
   display: flex;
   justify-content: center;
-  background-color: black;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: black;
   font-weight: bold;
-  opacity: .3;
+  opacity: .6;
   border-style: none;
 }
 .carousel-img-fix{
-  margin-top: -60px;
+  margin-top: -210px;
 }
 .footer{
   position: relative;
@@ -60,6 +61,37 @@
   width:100%;
   height: auto;
   margin-top: 50px;
+}
+.overlay-box{
+    background: #FFFFFF;
+    width: 1150px;
+    left: 50%;
+    top: 685px;
+    margin-left: -575px;
+    height: 175px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.overlay-img{
+  margin-top: -3px;
+  height: 110px;
+  width: auto;
+  display: flex;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.overlay-desc{
+  margin-top: 15px;
+  color: #628fbc;
+  font-weight: 500;
+  font-size: 12pt;
+}
+.overlay-price{
+  color: black;
+  font-weight: 500;
+  font-size: 10pt;
+  opacity: .5;
 }
 
 /*a.back-to-top {
