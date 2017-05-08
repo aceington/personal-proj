@@ -23,4 +23,9 @@ var app = angular.module('subaru', ['ui.router'])
     templateUrl: 'views/legacy.html',
     controller: 'vehicleCtrl'
   })
+  .state('newOutback', {
+    url: '/vehicle/2018-outback',
+    templateUrl: 'views/2018Outback.html',
+    controller: 'vehicleCtrl'
+  })
 })

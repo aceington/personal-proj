@@ -5392,7 +5392,7 @@ button.btn-floating {
 .dropdown-content {
   background-color: #fff;
   margin-top: 65px;
-  margin-left: -200px;
+  margin-left: -35%;
   display: none;
   min-width: 950px;
   min-height: 550px;
