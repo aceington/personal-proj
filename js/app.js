@@ -8,4 +8,19 @@ var app = angular.module('subaru', ['ui.router'])
     url: '/home',
     templateUrl: 'views/home.html'
   })
+  .state('impreza', {
+    url: '/vehicle/impreza',
+    templateUrl: 'views/impreza.html',
+    controller: 'vehicleCtrl'
+  })
+  .state('wrx', {
+    url: '/vehicle/wrx',
+    templateUrl: 'views/wrx.html',
+    controller: 'vehicleCtrl'
+  })
+  .state('legacy', {
+    url: '/vehicle/legacy',
+    templateUrl: 'views/legacy.html',
+    controller: 'vehicleCtrl'
+  })
 })

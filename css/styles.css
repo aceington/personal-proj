@@ -1,6 +1,8 @@
 .nav-logo{
   height: 95%;
   width: auto;
+  /*margin-left: 16px;
+  margin-top: -16px;*/
 }
 .black-text li a{
   color: black;
@@ -106,8 +108,132 @@
   width: auto;
   padding-left: 7px;
   padding-right: 7px;
-
 }
+.vehicle-background{
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+.vehicle-title-bg{
+  padding-bottom: 40%;
+  background-image: linear-gradient(black,transparent 40%);
+  opacity: .4;
+  z-index: 1;
+  position: relative;
+}
+.vehicle-title{
+  padding-top: 3%;
+  text-align: center;
+  color: white;
+  font-size: 25pt;
+  font-weight: 400;
+}
+.vehicle-position{
+  margin-top: -40%;
+  padding-bottom: 35%;
+  position: relative;
+  z-index: 60;
+}
+.vehicle-subtitle{
+  text-align: center;
+  color: white;
+  font-size: 23pt;
+  font-weight: 300;
+}
+.specs-overlay{
+  width: 100%;
+  height: 450px;
+  background: rgba(35,35,35,0.9);
+}
+.specs-details{
+  margin-top: 3%;
+  font-weight: 500;
+  font-size: 15pt;
+}
+.specs-title{
+  color: gray;
+  font-weight: 400;
+  font-size: 12pt;
+}
+.specs-button{
+  height: 60px;
+  width: 360px;
+  position: relative;
+  top: 65%;
+  left: 50%;
+  margin-left: -180px;
+  display: flex;
+  justify-content: center;
+  background-color: #0099ff;
+  color: white;
+  font-weight: 400;
+  border-style: none;
+}
+.features{
+  width: 100%;
+  height: auto;
+  padding-top: 7%;
+  display: flex;
+  align-items: center;
+}
+.features-text{
+  width: 30%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.features-font{
+  color: black;
+  font-size: 18pt;
+  font-weight: 300;
+}
+.features-desc{
+  font-size: 13pt;
+  font-weight: 400;
+  color: #36afff;
+}
+.features-img{
+  width: 70%;
+  height: auto;
+}
+.features-img-fix{
+  width: 100%;
+  height: auto;
+}
+.spin-view{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.spin-title{
+  color: black;
+  text-align: center;
+  font-size: 28pt;
+  font-weight: 400;
+  padding-top: 5%;
+}
+.interior-view{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.interior-view-img-fix{
+  width: 100%;
+  height: auto;
+}
+.interior-title{
+  text-align: center;
+  color: white;
+  font-size: 25pt;
+  font-weight: 400;
+  position: absolute;
+  top: 8%;
+  width: 100%;
+}
+
 
 /*a.back-to-top {
 	display: none;
