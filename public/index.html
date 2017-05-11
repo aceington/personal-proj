@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='subaru'>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="materialize/css/materialize.css">
+
+
+	<title>Subaru of America</title>
+</head>
+
+<body>
+	<!-- Dropdown Structure -->
+	<div id="dropdown1" class="dropdown-content">
+		<li><a href="#!">BRZ<br>
+		<div class="dropdown-price">
+			$25,495* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/brz.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a ui-sref="impreza">Impreza<br>
+		<div class="dropdown-price">
+			$18,395* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/impreza.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a ui-sref="wrx">WRX<br>
+		<div class="dropdown-price">
+			$26,695* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/wrx.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a ui-sref="legacy">Legacy<br>
+		<div class="dropdown-price">
+			$21,995* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/legacy.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a href="#!">Forester<br>
+		<div class="dropdown-price">
+			$22,595* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/forester.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a href="#!">Crosstrek<br>
+		<div class="dropdown-price">
+			$21,695* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/crosstrek.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+		<li><a href="#!">Outback<br>
+		<div class="dropdown-price">
+			$25,645* starting price
+			<img class="dropdown-img" src="pictures/homeView/overlayPics/outback.jpg" alt="">
+		</div></a>
+		</li>
+		<li class="divider"></li>
+	</div>
+	<div class="navbar-fixed" style="position: relative; z-index: 100;">
+		<nav>
+			<div class="nav-wrapper black-text">
+				<a ui-sref="home"><img src="pictures/main/nav-logo.jpg" class="nav-logo"></a>
+				<div ng-controller="vehicleCtrl" class="brand-logo left" style="font-size: 9pt;">
+					<li><a ng-click='getLocation()'>Local Weather {{weather.name}} / {{temp}}°F</a></li>
+				</div>
+				<div class="brand-logo center">
+					<ul>
+						<li><a class="dropdown-button" data-activates="dropdown1">VEHICLES<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a>SHOPPING TOOLS<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a>WHY SUBARU<i class="material-icons right">arrow_drop_down</i></a></li>
+						<!-- Dropdown Trigger -->
+						<!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
+					</ul>
+				</div>
+				<ul class="right">
+					<li><a>BUILD & PRICE</a></li>
+					<li><a>FIND RETAILER</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div>
+		<ui-view autoscroll="false"></ui-view>
+	</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Explore Subaru</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 11pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">Vehicles</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">View a Brochure</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">All Things Subaru</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Build & Price</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Compare Vehicles</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Find a Retailer</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Certified Pre-Owned</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Enthusiasts</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 10pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">Dear Subaru</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Motorsports</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Events</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Loves Pets</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Gear</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Drive Magazine</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Drive Performance</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Badge of Ownership</a></li>
+					</ul>
+				</div>
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Company</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 11pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">About Subaru</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Partnerships</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">New Camden Home</a></li>
+					</ul>
+				</div>
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Responsibility</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 11pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">Corporate Responsibility</a></li><br>
+						<li><a class="grey-text text-lighten-3" href="#!">Philosophy</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Community</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Diversity</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">SOA Foundation</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Environment</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Love Promise</a></li>
+					</ul>
+				</div>
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Owners</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 11pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">MySubaru</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Resource Center</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Benefits of Ownership</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Service, Parts & Accessories</a></li><br>
+						<li><a class="grey-text text-lighten-3" href="#!">Guaranteed Trade-In Program</a></li><br>
+						<li><a class="grey-text text-lighten-3" href="#!">Vehicle Recalls</a></li>
+					</ul>
+				</div>
+				<div class="col s2">
+					<div style="padding-bottom: 2%; border-bottom: 1px solid #515151;">
+						<h5 class="white-text" style="font-size: 13pt;">Other Sites</h5>
+					</div>
+					<ul style="font-weight: 300; font-size: 11pt;">
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Motors Finance</a></li><br>
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Global</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Power Products</a></li><br>
+						<li><a class="grey-text text-lighten-3" href="#!">STIS</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Order Subaru Parts</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Subaru Fleet</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spritespin/3.4.3/spritespin.js">
+	charset = "utf-8"
+</script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcd n.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<script src="materialize/js/materialize.js"></script>
+<script src="js/jQuery.js" charset="utf-8"></script>
+<script src="js/app.js" charset="utf-8"></script>
+<script src="js/controllers/vehicleCtrl.js"></script>
+<script src="js/services/vehicleService.js"></script>
+
+</html>
