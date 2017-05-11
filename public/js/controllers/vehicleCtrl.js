@@ -43,6 +43,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
     var promise = vehicleService.getAllVehicles();
     return promise.then(function(response) {
       $scope.vehicles = response;
+      console.log(response);
     })
   }();
 
