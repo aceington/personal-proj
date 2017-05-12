@@ -1,8 +1,6 @@
 .nav-logo {
-  height: 95%;
+  height: 90%;
   width: auto;
-  /*margin-left: 16px;
-  margin-top: -16px;*/
 }
 
 .black-text li a {
@@ -169,7 +167,7 @@
 }
 
 .specs-details {
-  margin-top: 3%;
+  margin-top: 2%;
   font-weight: 500;
   font-size: 15pt;
 }
@@ -409,7 +407,6 @@
   margin-bottom: 5%;
   margin-top: 4%;
 }
-
 
 
 /*a.back-to-top {

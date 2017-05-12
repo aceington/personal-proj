@@ -13,11 +13,11 @@ const conn = massive.connectSync({
 app.set('db', conn);
 const db = app.get('db');
 
-app.get('/vehicles/all', function(req,res){
+app.get('/vehicles/all', function(req, res) {
   console.log('at srvr');
   db.getAllVehicles(function(err, vehicles) {
     if (!err) {
-      console.log(err, vehicles);
+      console.log(err);
     }
     res.send(vehicles);
   })

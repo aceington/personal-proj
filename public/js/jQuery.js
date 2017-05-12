@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('body').fadeIn()
+
   $(".dropdown-button").dropdown();
 
   $('.carousel').carousel();

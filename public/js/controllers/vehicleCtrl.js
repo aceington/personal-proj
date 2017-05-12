@@ -3,7 +3,8 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
   $scope.imprezaSpin = vehicleService.imprezaSpin;
   $scope.wrxSpin = vehicleService.wrxSpin;
   $scope.legacySpin = vehicleService.legacySpin;
-  $scope.test = 'mpg data';
+  $scope.brzSpin = vehicleService.brzSpin;
+  $scope.foresterSpin = vehicleService.foresterSpin;
   $scope.$watchCollection('$stateParams', function() {
     $location.hash('top');
     $anchorScroll();
@@ -32,6 +33,26 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
   $(function() {
     $('.spritespinLegacy').spritespin({
       source: $scope.legacySpin,
+      width: 692,
+      height: 392,
+      sense: 1,
+      //  animate: false
+    });
+  });
+
+  $(function() {
+    $('.spritespinBrz').spritespin({
+      source: $scope.brzSpin,
+      width: 692,
+      height: 392,
+      sense: 1,
+      //  animate: false
+    });
+  });
+
+  $(function() {
+    $('.spritespinForester').spritespin({
+      source: $scope.foresterSpin,
       width: 692,
       height: 392,
       sense: 1,

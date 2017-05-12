@@ -28,4 +28,14 @@ var app = angular.module('subaru', ['ui.router'])
         templateUrl: 'views/2018Outback.html',
         controller: 'vehicleCtrl'
       })
+      .state('brz', {
+        url: '/vehicle/brz',
+        templateUrl: 'views/brz.html',
+        controller: 'vehicleCtrl'
+      })
+      .state('forester', {
+        url: '/vehicle/forester',
+        templateUrl: 'views/forester.html',
+        controller: 'vehicleCtrl'
+      })
   })
