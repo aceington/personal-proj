@@ -5,6 +5,9 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
   $scope.legacySpin = vehicleService.legacySpin;
   $scope.brzSpin = vehicleService.brzSpin;
   $scope.foresterSpin = vehicleService.foresterSpin;
+  $scope.crosstrekSpin = vehicleService.crosstrekSpin;
+  $scope.outbackSpin = vehicleService.outbackSpin;
+
   $scope.$watchCollection('$stateParams', function() {
     $location.hash('top');
     $anchorScroll();
@@ -53,6 +56,26 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
   $(function() {
     $('.spritespinForester').spritespin({
       source: $scope.foresterSpin,
+      width: 692,
+      height: 392,
+      sense: 1,
+      //  animate: false
+    });
+  });
+
+  $(function() {
+    $('.spritespinCrosstrek').spritespin({
+      source: $scope.crosstrekSpin,
+      width: 692,
+      height: 392,
+      sense: 1,
+      //  animate: false
+    });
+  });
+
+  $(function() {
+    $('.spritespinOutback').spritespin({
+      source: $scope.outbackSpin,
       width: 692,
       height: 392,
       sense: 1,
