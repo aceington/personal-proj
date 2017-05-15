@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const cors = require('cors');
+const config = require('./config.js');
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
