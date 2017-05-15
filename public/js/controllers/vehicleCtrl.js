@@ -19,7 +19,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -29,7 +29,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -39,7 +39,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -49,7 +49,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -59,7 +59,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -69,7 +69,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
@@ -79,7 +79,7 @@ app.controller('vehicleCtrl', function($location, $anchorScroll, $scope, $stateP
       width: 692,
       height: 392,
       sense: 1,
-      //  animate: false
+      animate: false
     });
   });
 
