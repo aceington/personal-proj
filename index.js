@@ -23,7 +23,7 @@ app.get('/vehicles/all', function(req, res) {
   })
 })
 
-const PORT = 3001;
+const PORT = 8083;
 app.listen(PORT, () => {
   console.log('listening on port: ', PORT);
 })
